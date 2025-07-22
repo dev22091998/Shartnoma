@@ -1,0 +1,52 @@
+.sidebar-container {
+  background-color: #f0f2f5; /* 💡 Yengil farqlanuvchi fon rangi */
+  height: 100vh;
+  position: fixed;
+  top: 56px; /* ✅ Navbar tagidan boshlanadi */
+  left: 0;
+  overflow-x: hidden;
+  transition: width 0.3s ease;
+  z-index: 1000;
+  border-right: 1px solid #ccc; /* Sofroq ko‘rinish */
+}
+
+.sidebar-container.open {
+  width: 250px;
+}
+
+.sidebar-container.closed {
+  width: 60px;
+}
+
+.sidebar-header {
+  border-bottom: 1px solid #ddd;
+  height: 56px;
+  background-color: #f0f2f5;
+}
+
+.sidebar-menu li a {
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+  transition: background-color 0.2s ease;
+}
+
+.sidebar-menu li a:hover {
+  background-color: #e1e5ea;
+  font-weight: 500;
+}
+
+.sidebar-menu li.active a {
+  background-color: #007bff;
+  color: white;
+  font-weight: 600;
+  border-radius: 4px;
+}
+
+.icon {
+  font-size: 18px;
+  width: 24px;
+  text-align: center;
+}

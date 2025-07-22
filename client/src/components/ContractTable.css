@@ -1,0 +1,114 @@
+/* ProductTable.css */
+.product-table {
+  background-color: #fff;
+
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 18px;
+    text-align: left;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  table-layout: fixed; /* Har bir ustun teng taqsimlanadi */
+  }
+
+  .product-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed; /* Ustunlar kengligi aniqlanadi */
+}
+
+.product-table th,
+.product-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.product-table th:first-child,
+.product-table td:first-child {
+  width: 40px; /* 1-ustun: № uchun kichik kenglik */
+  text-align: center;
+}
+
+/* 1-ustun: № uchun maxsus style */
+.product-table th:first-child,
+.product-table td:first-child {
+  width: 40px;
+  text-align: center;
+  overflow: visible;         /* 🔄 Ellipsis o‘chiriladi */
+  text-overflow: unset;      /* 🔄 Matn to‘liq ko‘rsatiladi */
+  white-space: normal;       /* 🔄 Qisqartirish bo‘lmaydi */
+}
+
+.product-table td a {
+  display: inline-block;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.product-table tbody tr:hover {
+  background-color: #f9f9f9;
+}
+
+
+  
+  
+  .product-table thead tr {
+    /* background-color: #009879; */
+    background: #1F70F7;
+    /* background-color: #1F70F7; */
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+  }
+  
+  .product-table th,
+  .product-table td {
+    padding: 12px 15px;
+  }
+  
+  .product-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+  }
+  
+  .product-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+  }
+  .product-table tbody tr:hover{
+    
+    cursor: pointer;
+    background-color: rgba(31, 147, 255, 0.3);
+  }
+  
+  .product-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+  }
+  
+  .btn-view {
+    background-color: #009879;
+    border-color: #fff;
+    color: #fff;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+  }
+  
+  .btn-view:hover {
+    background-color: #007b63;
+  }
+  
+  /* tbody { */
+    tbody tr:hover {
+      cursor: pointer;
+      background-color: rgba(31, 147, 255, 0.3);
+  }
+  

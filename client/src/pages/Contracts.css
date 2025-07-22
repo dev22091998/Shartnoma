@@ -1,0 +1,48 @@
+.product-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed; /* Ustunlarni teng taqsimlaydi */
+}
+
+.product-table th,
+.product-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* 1-ustun: faqat tartib raqami uchun */
+.product-table th:first-child,
+.product-table td:first-child {
+  width: 40px;
+  text-align: center;
+  overflow: visible;
+  text-overflow: unset;
+  white-space: normal;
+}
+.product-table .action-column {
+  width: 100px;
+  text-align: center;
+  overflow: visible;
+  text-overflow: unset;
+  white-space: nowrap;
+}
+
+
+
+/* Fayl nomi uchun link qisqartiriladi */
+.product-table td a {
+  display: inline-block;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Hover effekti */
+.product-table tbody tr:hover {
+  background-color: #f9f9f9;
+}
